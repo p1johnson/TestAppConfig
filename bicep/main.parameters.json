@@ -1,15 +1,30 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-      "environment": {
-        "value": "${AZURE_ENV_NAME}"
-      },
-      "tags": {
-          "value": {}
-      },
-      "spokeResourceGroupName": {
-        "value": ""
-      }
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "uksouth"
+    },
+    "resourceGroupName": {
+      "value": "rg-aca-aac-test"
+    },
+    "vnetName": {
+      "value": "vnet-aca-aac-test"
+    },
+    "vnetAddress": {
+      "value": "10.0.0.0/16"
+    },
+    "endpointSubnetName": {
+      "value": "endpoints"
+    },
+    "endpointSubnetAddress": {
+      "value": "10.0.2.0/27"
+    },
+    "caeSubnetName": {
+      "value": "containerapps"
+    },
+    "caeSubnetAddress": {
+      "value": "10.0.0.0/23"
     }
+  }
 }
